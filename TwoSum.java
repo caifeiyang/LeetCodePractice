@@ -24,7 +24,8 @@ public class TwoSum{
     }
 
     /**
-     * 空间换时间，使用map存放另一个结果，时间复杂度O(n)，空间复杂度O(n)
+     * 空间换时间，利用map查找复杂度为O(1)的特性，将数组的值放入map的key，数组下标放入对应value
+     * 时间复杂度O(n)，空间复杂度O(n)
      */
     public int[] twoSum2(int[] nums, int target){
 	Map<Integer,Integer> map = new HashMap<Integer,Integer>();
